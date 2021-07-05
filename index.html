@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WK2 Homework Lessenberry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>David's Nature Carousel</h1>
+    <div id="window">
+        <div id="imageSlider">
+            <img src="./images/nature1.jpg" alt="nature1">
+            <img src="./images/nature2.jpg" alt="nature2">
+            <img src="./images/nature3.jpg" alt="nature3">
+            <img src="./images/nature4.jpg" alt="nature4">
+        </div>
+    </div>
+    <div id="button">
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+
+    <style>
+        #button {
+            display: flex;
+        }
+    </style>
+    <script>
+        let position = 0;
+        const nextSlide = function (){
+            const imageSlider = document.getElementById('imageSlider');
+            position -= 400;
+            imageSlider.style.transform = `translateX(${position}px)`
+        }
+
+        const prevSlide = function() {
+            const imageSlider = document.getElementById('imageSlider');
+            position += 400;
+            imageSlider.style.transform = `translateX(${position}px)`
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

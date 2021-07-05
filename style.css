@@ -1,0 +1,38 @@
+.window {
+    border: 1px solid;
+    width: 400px;
+}
+
+.imageSlider {
+    display: flex;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+#window {
+    position: relative;
+    border: 10px solid;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#imageSlider {
+    display: flex;
+    /* transform: translateX(-000px);
+    transform: translateX(-200px);
+    transform: translateX(-400px);
+    transform: translateX(-600px); */
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    background-color: black;
+}
